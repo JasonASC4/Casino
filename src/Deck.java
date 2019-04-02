@@ -1,11 +1,8 @@
-package Blackjack;
 import java.util.ArrayList;
 import java.util.Random;
-/*
- * Creates and shuffles a deck of 52 playing cards.
- */
+
 class Deck {
-private ArrayList<Card> deck;//represents a deck of cards
+private ArrayList<Card> deck;
 Deck()
 {
     deck = new ArrayList<Card>();
@@ -17,9 +14,7 @@ Deck()
         }
     }
 }
-/*
- * Shuffles the deck by changing the indexes of 200 random pairs of cards in the deck.
- */
+
 public void shuffle()
 {
     Random random = new Random();
@@ -33,9 +28,8 @@ public void shuffle()
         deck.set(index1, temp);
     }
 }
-/*
- * Draws a card from the deck.
- */
+
+    
 public Card drawCard()
 {
     return deck.remove(0);
