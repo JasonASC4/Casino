@@ -1,5 +1,3 @@
-package Blackjack;
-
 class Card {
 
 private int rank;
